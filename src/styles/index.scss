@@ -1,13 +1,43 @@
 @import "~bootstrap/scss/bootstrap.scss";
 
-/* 
+body {
+    background: rgb(145,141,141);
+    background: radial-gradient(circle, rgba(145,141,141,1) 8%, rgba(82,82,82,1) 70%);
+    padding-top: 5rem;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
 
-    You can write your own styles here...
-    
-    
-    ...Or you can use the import command to include 
-    other sylesheets into your bunde as well, e.j:
-    
-    import 'relative/path/to/stylesheet.scss';
+.ticTacToe{
+    width: 44rem;
+    height: 44rem;
+    background: rgb(61, 61, 61);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 5rem;
+    border: 0.3rem solid rgb(27, 27, 27);
+    box-shadow: 2rem 2rem 2rem 1rem rgba(0, 0, 0, 0.5);
+}
 
-*/
+.row {
+    justify-content: center;
+}
+.square {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 10rem;
+    height: 10rem;
+    border: 1rem solid black;
+    color:chartreuse;
+    font-size: 6rem;
+}
+
+.win_message {
+    font-size: 7rem;
+    color: white;
+    text-align: center;
+    margin-bottom: 2rem;
+}
